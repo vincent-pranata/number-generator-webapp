@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Random Number Generator</title>
+        <link href="/static/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section>
+            <h1>Random Number Generator</h1>
+            <p>This is a simple random number generator that I made for fun.</p>
+            <form method="POST" action="validate_input">
+                <label>From:</label>
+                <input type="number" name="lower_bound" value="{{lower}}" required>
+                <label>To:</label>
+                <input type="number" name="upper_bound" value="{{upper}}" required>
+                <br> <button type="submit">Go</button>
+            </form>
+
+            {% if result %}
+                <h2>Result</h2>
+                <p>{{result}}</p>
+            {% endif %}
+        </section>
+        <p>@Copyright Vincent Pranata</p>
+    </body>
+</html>
