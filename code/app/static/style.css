@@ -1,0 +1,71 @@
+@font-face {
+    font-family: armstrike;
+    src: url('../static/fonts/Amstrike.otf');
+}
+
+@font-face {
+    font-family: monday_routine;
+    src: url('../static/fonts/Monday_Routines.otf');
+}
+
+html{
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(-45deg, #00203FFF, #ADEFD1FF, #23a6d5, #23d5ab);
+	background-size: 500% 500%;
+	animation: gradient 15s ease infinite;
+}
+
+h1{
+    font-family: armstrike;
+    font-size: 25px;
+}
+
+.container{
+    display: flex;
+}
+
+.text{
+    font-family: monday_routine;
+    font-size: 35px;
+}
+
+.text1{
+    font-family: monday_routine;
+    font-size: 25px;
+    min-width: 60px;
+    width: 60px;
+}
+
+.left, .right{
+    width: 45%;
+    margin: 0px auto 0px auto;
+}
+
+.mastfoot {
+    position: fixed;
+    bottom: 0;
+}
+
+.inner {
+    margin: 0px auto 0px auto;
+    padding: 30px;
+}
+
+.mastfoot{
+    width: 100%; 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
